@@ -3,8 +3,8 @@
     vertical-align: top;
 }
 
-div.logo {
-    width: 23%;
+div.logo img {
+    width: 100px;
     padding: 1%;
 }
 
@@ -13,9 +13,16 @@ nav {
     padding: 1%;
 }
 
-ul {
-    width: 50%;
-    margin-left: auto;
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:white;
+}
+
+header nav {
+    background-color:blue;
+    width: 100%;
 }
 
 .logo {
@@ -33,13 +40,16 @@ ul {
 }
 
 footer {
-    background-color: #373738;
+    background-color: #272727;
+    padding: 1%;
 }
 
 footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: aliceblue;
+    
 
 }
 
@@ -66,13 +76,27 @@ div.workGrid div img {
     width: 200px;
 }
 
-/* div.workGrid {
-    display: grid;
-    grid-template-areas: "myArea myArea myArea";
-    
+/* .workGridItemHeader {
+    grid-area: myHeader;
 }
 
 .workGridItem {
     grid-area: myArea;
+} 
 
+div.workGrid {
+    display: grid;
+    grid-template-areas:
+    ". myHeader"
+    "myArea myArea myArea";
+    grid-template-rows: auto;
+    grid-template-columns: 50px 50px 50px 50px;
 } */
+
+@media only screen and (max-width: 600) {
+    div.flexContainer {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+     }
+}
