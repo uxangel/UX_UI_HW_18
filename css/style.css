@@ -62,3 +62,17 @@ div.flexContainer div img {
     width: 200px;
 }
 
+div.workGrid div img {
+    width: 200px;
+}
+
+/* div.workGrid {
+    display: grid;
+    grid-template-areas: "myArea myArea myArea";
+    
+}
+
+.workGridItem {
+    grid-area: myArea;
+
+} */
