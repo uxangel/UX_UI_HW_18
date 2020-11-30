@@ -49,3 +49,14 @@ img.angel-pic {
     
 }
 
+div.flexContainer {
+    display: flex;
+}
+
+div.flexContainer div {
+    width: 33%;
+    padding: 20px;
+}
+
+
+
